@@ -41,5 +41,5 @@ function generatedMessage(arr) {
   console.log(sentence)
 }
 
-//Formates the array into a readable message
+//Formats the array into a readable message
 generatedMessage(generatedCharacter)
