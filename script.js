@@ -6,3 +6,8 @@ const lifeList = {
   age: ['kid', 'teen', 'adult', 'middle aged', 'old'],
   gender: ['male', 'female']
 }
+
+const randomChoice = num => Math.floor(Math.random() * num)
+
+console.log(randomChoice(12))
+  
