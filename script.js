@@ -1,7 +1,7 @@
 const lifeList = {
   time: ['modern', 'medieval', 'near future', 'distant future'],
   occupation: ['soldier', 'teacher', 'pilot', 'police officer', 'student', 'dentist', 'doctor', 'janitor'],
-  age: ['kid', 'teen', 'adult', 'middle aged', 'old'],
+  age: ['young', 'adult age', 'middle aged', 'old'],
   gender: ['male', 'female']
 }
 // random number for iterating between 0 and num
@@ -20,23 +20,26 @@ for(let string in lifeList) {
   // add object properties to the original array to be displayed later
   switch(string) {
     case 'time':
-      generatedCharacter.push(`The settings takes place in ${lifeList[string][listIndex]}`)
+      generatedCharacter.push(`The setting takes place in: ${lifeList[string][listIndex]} times`)
       break
     case 'occupation':
-      generatedCharacter.push(`Your occupation is ${lifeList[string][listIndex]}`)
+      generatedCharacter.push(`Your occupation is: ${lifeList[string][listIndex]}`)
       break
     case 'age':
-      generatedCharacter.push(`Your are a ${lifeList[string][listIndex]}`)
+      generatedCharacter.push(`You are: ${lifeList[string][listIndex]}`)
       break
     case 'gender':
-      generatedCharacter.push(`You are ${lifeList[string][listIndex]}`)
+      generatedCharacter.push(`You are: ${lifeList[string][listIndex]}`)
       break
     default:
       generatedCharacter.push('Something went wrong please try again')
   }
 }
-
-function makeSentence(arr) {
+//Create a message with a line breaks for cleaner reading
+function generatedMessage(arr) {
   const sentence = arr.join('\n')
   console.log(sentence)
 }
+
+//Formates the array into a readable message
+generatedMessage(generatedCharacter)
