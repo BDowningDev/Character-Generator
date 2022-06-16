@@ -36,3 +36,7 @@ for(let string in lifeList) {
   }
 }
 
+function makeSentence(arr) {
+  const sentence = arr.join('\n')
+  console.log(sentence)
+}
