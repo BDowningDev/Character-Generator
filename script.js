@@ -35,7 +35,7 @@ for(let string in lifeList) {
       generatedCharacter.push('Something went wrong please try again')
   }
 }
-//Create a message with a line breaks for cleaner reading
+//Create a message with line breaks for cleaner reading
 function generatedMessage(arr) {
   const sentence = arr.join('\n')
   console.log(sentence)
